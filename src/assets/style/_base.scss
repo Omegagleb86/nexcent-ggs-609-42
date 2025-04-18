@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: $base-color;
+    /* line-height: 24px; */
+}
+
+.container {
+    margin: 0 auto;
+    width: 1152px;
+
+    @media (max-width: $breakpoints-xl) {
+        width: $container-lg;
+    }
+
+    @media (max-width: $breakpoints-lg) {
+        width: $container-md;
+    }
+
+    @media (max-width: $breakpoints-md) {
+        width: $container-sm;
+    }
+
+    @media (max-width: $breakpoints-sm) {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+}
+
+h1 {
+    margin-bottom: 28px;
+    line-height: 119%;
+    letter-spacing: 2px;
+    color: $gray;
+    font-size: 64px;
+    font-weight: 600;
+
+    span {
+        color: $primary;
+    }
+
+    @media (max-width: $breakpoints-lg) {
+        font-size: 48px;
+    }
+
+    @media (max-width: $breakpoints-md) {
+        font-size: 32px;
+        letter-spacing: 0;
+    }
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 122%;
+    font-weight: 600;
+    color: $gray;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+
+    span {
+        color: $primary;
+    }
+
+    @media (max-width: $breakpoints-md) {
+        font-size: 28px;
+        letter-spacing: 0;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 128%;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    color: $gray;
+
+    @media (max-width: $breakpoints-md) {
+        letter-spacing: 0;
+    }
+}
+
+h4 {
+    line-height: 140%;
+    font-size: 20px;
+    color: $gray;
+
+    @media (max-width: $breakpoints-md) {
+        letter-spacing: 0;
+    }
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+// header {
+//     height: 85px;
+//     display: flex;
+//     align-items: center;
+// }
+
+button {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+a {
+    color: $dark;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button_light-sm {
+    width: 77px;
+    color: $primary;
+    background-color: $light;
+    padding: 10px 20px;
+    /* border: $light 1px solid; */
+    border-radius: 6px;
+    font-family: "Inter", serif;
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: 400;
+}
+
+.button_primary-sm {
+    width: 91px;
+    white-space: nowrap;
+    color: $white;
+    background-color: $primary;
+    padding: 10px 20px;
+    /* border: $primary 1px solid; */
+    border-radius: 6px;
+    font-family: "Inter", serif;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.button_primary-xl {
+    color: $white;
+    background-color: $primary;
+    padding: 14px 32px;
+    /* border: $primary 1px solid; */
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button_icon {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.hidden{
+  overflow: hidden;
+}

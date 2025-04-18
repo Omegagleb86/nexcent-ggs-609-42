@@ -1,0 +1,50 @@
+.promo {
+    background-color: $light;
+    padding: 177px 0 96px;
+
+    @media (max-width: $breakpoints-md) {
+        padding: 121px 0 60px;
+    }
+
+    h1 {
+        margin-bottom: 16px;
+        // line-height: 76px;
+    }
+}
+
+.promo__content {
+    display: flex;
+    align-items: center;
+    gap: 114px;
+
+    @media (max-width: $breakpoints-lg) {
+        gap: 40px;
+
+        img {
+            width: 280px;
+        }
+    }
+
+    @media (max-width: $breakpoints-md) {
+        flex-direction: column-reverse;
+    }
+
+    @media (max-width: $breakpoints-sm) {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.promo__group {
+    p {
+        margin-bottom: 32px;
+        line-height: 1.5;
+    }
+
+    button {
+        @media (max-width: $breakpoints-md) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.clients {
+    padding: 100px 0 50px;
+
+    @media (max-width: $breakpoints-md) {
+        padding: 80px 0 40px;
+    }
+    
+}
+
+.clients h2 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $gray;
+}
+
+.clients p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $base-color;
+    margin-top: 8px;
+    /* margin-left: 100px; */
+    margin-bottom: 32px;
+}
+
+.clients__logos {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+
+    @media (max-width: $breakpoints-lg) {
+        gap: 36px;
+    }
+
+    @media (max-width: $breakpoints-md) {
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // justify-items: center;
+        flex-wrap: wrap;
+        column-gap: 26px;
+        row-gap: 16px;
+    }
+}

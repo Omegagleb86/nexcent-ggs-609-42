@@ -1,0 +1,24 @@
+/* variables */
+@import "_variables.scss";
+/* Основные изменения, ведущие к визуальному порядку на сайте */
+@import "_base.scss";
+/* Навигация */
+@import "_navigation.scss";
+/* Навигация мобильной версии сайта */
+@import "_mobile-navigation.scss";
+/* promo */
+@import "_promo.scss";
+/* clients */
+@import "_clients.scss";
+/* manage */
+@import "_manage.scss";
+/* unlock */
+@import "_unlock.scss";
+/* chivments */
+@import "_achivments.scss";
+/* customer */
+@import "_customer.scss";
+/* cta */
+@import "_cta.scss";
+/* footer */
+@import "_footer.scss";

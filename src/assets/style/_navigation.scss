@@ -1,0 +1,48 @@
+// body {
+//     font-family: "Inter", serif;
+//     font-optical-sizing: auto;
+//     font-weight: 400;
+//     font-style: normal;
+// }
+.desktop-navigation, .mobile-navigation{
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 1;
+    box-shadow: $box-shadow;
+}
+
+.desktop-navigation{
+    
+
+    @media (max-width: $breakpoints-lg) {
+        display: none;
+    }
+}
+
+.desktop-navigation__wrap
+{
+    display: flex;
+    // gap: 114px;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 50px;
+
+    @media (max-width:$breakpoints-xl) {
+        gap: 30px;
+    }
+}
+
+.navigation__list-element_active {
+    font-weight: 500;
+}
+
+.navigation__buttons {
+    display: flex;
+    gap: 14px;
+}

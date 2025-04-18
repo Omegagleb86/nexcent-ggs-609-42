@@ -1,0 +1,46 @@
+.achivements {
+    padding: 60px 0;
+    margin: 50px 0;
+    background-color: #F5F7FA;
+}
+
+.achivements__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achivements__content-header {
+    h2{
+        /* margin-top: 3px; */
+        margin-bottom: 8px;
+        line-height: 44px;
+        letter-spacing: 1.3px;
+    }
+
+    p {
+        padding-top: 1px;
+        color: #18191F;
+        line-height: 24px;
+    }
+}
+
+.achivements__content-group {
+    display: grid;
+    grid-template-columns: repeat(2, 270px);
+    row-gap: 40px;
+    column-gap: 24px;
+
+    p{
+        padding-top: 1px;
+    }
+}
+
+.achivements__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    p{
+        line-height: 24px;
+    }
+}
